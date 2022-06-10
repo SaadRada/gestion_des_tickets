@@ -1,0 +1,75 @@
+#connex .row {
+  height: 100vh !important;
+}
+
+#connex .row .colorI {
+  color: #0077B6;
+  size: 200px !important;
+}
+
+#connex .row #seConnecter {
+  background-color: #0077B6;
+}
+
+#home .navbar {
+  height: 10vh !important;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
+}
+#home .navbar .img-fluid:first-child {
+  height: 4vh !important;
+}
+#home .navbar a {
+  text-decoration: none !important;
+  color: #222222 !important;
+}
+#home .navbar a:hover, #home .navbar a:active {
+  color: #0077B6 !important;
+}
+#home .navbar .sp {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0% !important;
+  height: 3px !important;
+  background-color: #0077B6 !important;
+  transition: 0.5s ease-in-out;
+}
+#home .navbar a:hover .sp {
+  width: 100% !important;
+}
+#home .container .row:first-child {
+  height: 100px !important;
+}
+#home .container .row:first-child .col {
+  background: linear-gradient(270deg, #16527C 0%, #00B4D8 100%) !important;
+  color: #FFFFFF !important;
+  border-radius: 15px !important;
+  margin: 0px 20px !important;
+}
+#home .container .row:nth-child(2) {
+  height: 300px !important;
+}
+#home .container .row:nth-child(2) #graph li {
+  position: absolute;
+  list-style: none;
+  background: lightblue;
+  width: 40px;
+  text-align: center;
+  border: 1px solid black;
+  visibility: hidden;
+  background: red;
+}
+#home .container .row:last-child {
+  height: auto !important;
+}
+#home .container .row:last-child .table {
+  height: auto !important;
+}
+#home .container .row:last-child .table-border {
+  border: 1px solid #000;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
+/*# sourceMappingURL=mystyle.scss.map */
+
+/*# sourceMappingURL=mystyle.css.map */

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Feuille de CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/2860646ad5.js" crossorigin="anonymous"></script>
+</head>
+<body id="home">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="" srcset="" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-2">
+                    <a class="nav-link position-relative active fw-bold" aria-current="page" href="#">
+                        <i class="fa-light fa-house"></i>
+                        Dashboard
+                        <span class="sp"></span>
+                    </a>
+                </li>
+                
+              <li class="nav-item dropdown mx-2">
+                <a class="nav-link position-relative fw-bold" href="ticket.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-light fa-clipboard-list"></i>
+                    Ticket
+                    <span class="sp"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-ticket-simple"></i> Création ticket</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-ticket"></i> Consultation des tickets</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown mx-2">
+                <a class="nav-link position-relative fw-bold" href="prestataire.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-light fa-user-tie"></i>
+                    Prestataire
+                    <span class="sp"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-user-pen"></i> Ajouter Prestataire</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-users-gear"></i> Consulter les prestataire</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown mx-2">
+                <a class="nav-link  position-relative fw-bold" href="utilisateurs.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-light fa-user"></i>
+                    Utilisateurs
+                    <span class="sp"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa-light fa-user-plus"></i>
+                      Ajouter un utilisateur
+                    </a>
+                    </li>
+                    <li>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa-light fa-users"></i>
+                        Consulter les utilisateurs
+                    </a>
+                    </li>
+                </ul>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <div class="input-group">
+                    <span class="input-group-text p-0" id="basic-addon1"><button class="btn btn-outline-none p-1" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button></span>
+                    
+                    <input type="text" class="form-control form-control-sm bg-light" placeholder="N° ticket" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+            </form>
+            <div class="mx-3">
+                <i class="fa-light fa-bell"></i>
+            </div>
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/logo.png" class="img rounded" alt="" srcset="" width="30px" height="30px">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-person-walking"></i>Se déconnecter</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Mon Compte</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+      <div class="row mt-4 mb-3 justify-content-between">
+        <div class="col d-flex flex-column justify-content-center align-items-center text-center p-0">
+          <h6 class="m-0">N° des tickets</h6>
+          <p class="m-0 fs-1">520</p>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center text-center p-0">
+          <h6 class="m-0">N° des tickets cloturé</h6>
+          <p class="m-0 fs-1">316</p>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center text-center p-0">
+          <h6 class="m-0">N° des tickets Non Cloturé</h6>
+          <p class="m-0 fs-1">150</p>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center text-center p-0">
+          <h6 class="m-0">N° des tickets rajeter</h6>
+          <p class="m-0 fs-1">16</p>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center text-center p-0">
+          <h6 class="m-0">N° des tickets sauvegarder</h6>
+          <p class="m-0 fs-1">30</p>
+        </div>
+      </div>
+      <div class="row mb-3 justify-content-between">
+        <div class="col-5 pt-3 border">
+          <h6>N° des Tickes créer par mois</h6>
+        </div>
+        <div class="col-4 pt-3 border">
+          <h6>N° des Tickes créer par prestataire</h6>
+        </div>
+        <div class="col-2 pt-3 border">
+          <h6 class="text-center">Tasks</h6>
+          <hr class="p-0 m-0">
+        </div>
+      </div>
+      <div class="row ">
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Créer par</th>
+              <th scope="col">Date de creation</th>
+              <th scope="col">Prestataire</th>
+              <th scope="col">Probléme</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>ETTABAA Aomar</td>
+              <td>09/05/2022</td>
+              <td>INWI</td>
+              <td>probleme au niveau de routeur</td>
+              <td class="">en cours</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>ERREDOUANI Younes</td>
+              <td>09/05/2022</td>
+              <td>Eelectro</td>
+              <td>probleme au niveau d'electricité'</td>
+              <td class="">cloturé</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>RADA Saad</td>
+              <td>09/05/2022</td>
+              <td>Caisse</td>
+              <td>probleme au niveau de caisse N 10</td>
+              <td class="">enregistrer</td>
+              <td>...</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+    <!-- BOOTSTRAP JS & POPPER -->
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
+</body>
+</html>
