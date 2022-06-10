@@ -13,7 +13,7 @@
 }
 #home{
   .navbar{
-    height: 10vh !important;
+    height: 8vh !important;
     box-shadow: 0px 1px 5px rgb(0 0 0 / 50%) !important;
     .img-fluid:first-child{
       height: 4vh !important;
@@ -37,16 +37,25 @@
     a:hover .sp{
       width: 100% !important;
     }
+    .collapse{
+      
+      @media only screen and (max-width: 991px) {
+        height: 50vh !important;
+        font-size: 1.5rem;
+        padding-left: 10px;
+        margin: 0px;
+        margin-top: 10px;
+      }
+    }
   }
   .container{
     .row:first-child{
-      height:100px !important;
-      .col{
+      height:auto !important;
+      .col-12, .col-md-4, .col-lg{
         background: $light-gradient !important;
         color: $light !important;
         border-radius: 15px !important;
-        margin: 0px 20px !important;
-
+        margin: 10px !important;
       }
       
     }

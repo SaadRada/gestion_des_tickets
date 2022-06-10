@@ -12,7 +12,7 @@
 }
 
 #home .navbar {
-  height: 10vh !important;
+  height: 8vh !important;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
 }
 #home .navbar .img-fluid:first-child {
@@ -37,27 +37,26 @@
 #home .navbar a:hover .sp {
   width: 100% !important;
 }
-#home .container .row:first-child {
-  height: 100px !important;
+@media only screen and (max-width: 991px) {
+  #home .navbar .collapse {
+    height: 50vh !important;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    margin: 0px;
+    margin-top: 10px;
+  }
 }
-#home .container .row:first-child .col {
+#home .container .row:first-child {
+  height: auto !important;
+}
+#home .container .row:first-child .col-12, #home .container .row:first-child .col-md-4, #home .container .row:first-child .col-lg {
   background: linear-gradient(270deg, #16527C 0%, #00B4D8 100%) !important;
   color: #FFFFFF !important;
   border-radius: 15px !important;
-  margin: 0px 20px !important;
+  margin: 10px !important;
 }
 #home .container .row:nth-child(2) {
   height: 300px !important;
-}
-#home .container .row:nth-child(2) #graph li {
-  position: absolute;
-  list-style: none;
-  background: lightblue;
-  width: 40px;
-  text-align: center;
-  border: 1px solid black;
-  visibility: hidden;
-  background: red;
 }
 #home .container .row:last-child {
   height: auto !important;
