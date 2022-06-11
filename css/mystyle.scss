@@ -11,52 +11,53 @@
 #connex .row #seConnecter {
   background-color: $blue;
 }
-#home{
-  .navbar{
-    height: 8vh !important;
-    box-shadow: 0px 1px 5px rgb(0 0 0 / 50%) !important;
-    .img-fluid:first-child{
-      height: 4vh !important;
-    }
-    a{
-      text-decoration: none !important;
-      color: $dark !important;
-    }
-    a:hover, a:active{
-      color: $blue !important;
-    }
-    .sp{
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0% !important;
-      height: 3px !important;
-      background-color: $blue !important;
-    }
-    a:hover .sp{
-      width: 100% !important;
-      transition: .5s ease-in-out;
-    }
-    .collapse{
+.navbar{
+  height: 8vh !important;
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 50%) !important;
+  .img-fluid:first-child{
+    height: 4vh !important;
+  }
+  a{
+    text-decoration: none !important;
+    color: $dark !important;
+  }
+  a:hover, a:active{
+    color: $blue !important;
+  }
+  .sp{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0% !important;
+    height: 3px !important;
+    background-color: $blue !important;
+  }
+  a:hover .sp{
+    width: 100% !important;
+    transition: .5s ease-in-out;
+  }
+  .collapse{
+    
+    @media only screen and (max-width: 991px) {
+      height: auto !important;
+      max-height: 90vh !important;
+      font-size: 1.3rem;
+      margin: 0px;
+      margin-top: 10px;
+      padding: 10px 30px;
+      padding-top: 50px;
+      background: $light;
+      box-shadow: -2px 5px 30px $dark-blue;
+      border-radius: 15px;
       
-      @media only screen and (max-width: 991px) {
-        height: auto !important;
-        max-height: 90vh !important;
-        font-size: 1.3rem;
-        margin: 0px;
-        margin-top: 10px;
-        padding: 10px 30px;
-        padding-top: 50px;
-        background: $light;
-        box-shadow: -2px 5px 30px $dark-blue;
-        border-radius: 15px;
-        
-        .dropdown{
-          display: block;
-        }
+      .dropdown{
+        display: block;
       }
     }
   }
+}
+#home{
+  
   .container{
     .row:first-child{
       height:auto !important;
@@ -82,7 +83,14 @@
     }
   }
 }
-
+#creationTicket{
+  .container{
+    #formCreationTicket{
+      border: 1px solid $dark !important;
+      border-radius: 10px !important;
+    }
+  }
+}
 
 
 /*# sourceMappingURL=mystyle.css.map */

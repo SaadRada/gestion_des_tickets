@@ -11,21 +11,21 @@
   background-color: #0077B6;
 }
 
-#home .navbar {
+.navbar {
   height: 8vh !important;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) !important;
 }
-#home .navbar .img-fluid:first-child {
+.navbar .img-fluid:first-child {
   height: 4vh !important;
 }
-#home .navbar a {
+.navbar a {
   text-decoration: none !important;
   color: #222222 !important;
 }
-#home .navbar a:hover, #home .navbar a:active {
+.navbar a:hover, .navbar a:active {
   color: #0077B6 !important;
 }
-#home .navbar .sp {
+.navbar .sp {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -33,12 +33,12 @@
   height: 3px !important;
   background-color: #0077B6 !important;
 }
-#home .navbar a:hover .sp {
+.navbar a:hover .sp {
   width: 100% !important;
   transition: 0.5s ease-in-out;
 }
 @media only screen and (max-width: 991px) {
-  #home .navbar .collapse {
+  .navbar .collapse {
     height: auto !important;
     max-height: 90vh !important;
     font-size: 1.3rem;
@@ -50,10 +50,11 @@
     box-shadow: -2px 5px 30px #2B2D42;
     border-radius: 15px;
   }
-  #home .navbar .collapse .dropdown {
+  .navbar .collapse .dropdown {
     display: block;
   }
 }
+
 #home .container .row:first-child {
   height: auto !important;
 }
@@ -74,6 +75,11 @@
 }
 #home .container .row:last-child .table-border {
   border: 1px solid #000;
+}
+
+#creationTicket .container #formCreationTicket {
+  border: 1px solid #222222 !important;
+  border-radius: 10px !important;
 }
 
 /*# sourceMappingURL=mystyle.css.map */

@@ -11,8 +11,8 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2860646ad5.js" crossorigin="anonymous"></script>
 </head>
-<body id="home">
-    <nav class="navbar sticky-top navbar-light navbar-expand-lg ">
+<body id="creationTicket">
+    <nav class="navbar navbar-light navbar-expand-lg ">
         <div class="container">
           <a class="navbar-brand" href="Home.html">
               <img src="img/logo.png" alt="" srcset="" class="img-fluid">
@@ -124,95 +124,84 @@
           </div>
         </div>
     </nav>
-    <div class="container">
-      <div class="row  mx-auto mt-4 mb-3 justify-content-md-evenly">
-        <div class="col-11 mx-auto p-2 my-2 col-md-5 col-lg d-flex flex-column justify-content-center align-items-center text-center p-0">
-          <h6 class="m-0">N° des tickets</h6>
-          <p class="m-0 fs-1">520</p>
-        </div>
-        <div class="col-11 mx-auto p-2 m-2 col-md-5 col-lg d-flex flex-column justify-content-center align-items-center text-center p-0">
-          <h6 class="m-0">N° des tickets cloturé</h6>
-          <p class="m-0 fs-1">316</p>
-        </div>
-        <div class="col-11 mx-auto p-2 m-2 col-md-5 col-lg d-flex flex-column justify-content-center align-items-center text-center p-0">
-          <h6 class="m-0">N° des tickets Non Cloturé</h6>
-          <p class="m-0 fs-1">150</p>
-        </div>
-        <div class="col-11 mx-auto p-2 m-2 col-md-5 col-lg d-flex flex-column justify-content-center align-items-center text-center p-0">
-          <h6 class="m-0">N° des tickets rajeter</h6>
-          <p class="m-0 fs-1">16</p>
-        </div>
-        <div class="col-11 mx-auto p-2 m-2 col-md-5 col-lg d-flex flex-column justify-content-center align-items-center text-center p-0">
-          <h6 class="m-0">N° des tickets sauvegarder</h6>
-          <p class="m-0 fs-1">30</p>
-        </div>
-      </div>
-      <div class="row mb-3 justify-content-between">
-        <div class="col-11 col-md-12 col-lg-5 mx-auto mb-2 pt-3 border">
-          <h6>N° des Tickes créer par mois</h6>
-        </div>
-        <div class="col-11 col-md-8 col-lg-4 mx-auto mb-2 pt-3 border">
-          <h6>N° des Tickes créer par prestataire</h6>
-        </div>
-        <div class="col-6 col-md-4 col-lg-2 mx-auto mb-2 pt-3 border">
-          <h6 class="text-center">Tasks</h6>
-          <hr class="p-0 m-0">
-        </div>
-      </div>
-      <div class="row">
-        <div class="table-responsive">
-          <table class="table">
-            <thead class="table-dark">
-              <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Créer par</th>
-                <th scope="col">Date de creation</th>
-                <th scope="col">Prestataire</th>
-                <th scope="col">Probléme</th>
-                <th scope="col">Status</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>ETTABAA Aomar</td>
-                <td>09/05/2022</td>
-                <td>INWI</td>
-                <td>probleme au niveau de routeur</td>
-                <td class="">en cours</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>ERREDOUANI Younes</td>
-                <td>09/05/2022</td>
-                <td>Eelectro</td>
-                <td>probleme au niveau d'electricité'</td>
-                <td class="">cloturé</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>RADA Saad</td>
-                <td>09/05/2022</td>
-                <td>Caisse</td>
-                <td>probleme au niveau de caisse N 10</td>
-                <td class="">enregistrer</td>
-                <td>...</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+    <div class="container my-5">
+        <form autocomplete="on" id="formCreationTicket">
+            <fieldset>
+                <legend><h2 class="ms-3 mt-4 mb-4 fs-2">Créer un nouveaux ticket</h2></legend>
+                <div class="row">
+                    <div class="col-12 col-md-6 px-lg-5 pt-lg-3">
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Créer par :</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="ETTABAA Aomar">
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Email:</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="omar.ettabaa@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Téléphone :</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="+212659674587">
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Enseigne</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Marjane">
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Site</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Marjane California">
+                        </div>
+                        <div class="d-md-flex justify-content-around  d-none mt-5">
+                            <input class="col-3 col-md-3 btn btn-primary" type="submit">
+                            <input class="col-3 col-md-3 btn btn-info text-light mx-4" type="button" value="Sauvegarder">
+                            <input class=" col-3 col-md-3 btn btn-danger" type="button" value="Annulé">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 px-lg-5 pt-lg-3">
+                        <div class="mb-3">
+                            <label for="TextInput" class="form-label">Prestataire :</label>
+                            <input type="Text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="placeholder text">
+                        </div>
+                        <div class="mb-3">
+                            <label for="TextInput" class="form-label">Type de Probléme :</label>
+                            <select id="Select" class="form-select">
+                                <option>option1</option>
+                                <option>option2</option>
+                                <option>option3</option>
+                                <option>option4</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="TextInput" class="form-label">Date d'affectation :</label>
+                            <input class="form-control" type="date" name="" id="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="TextInput" class="form-label">Etat de probléme :</label>
+                            <select id="Select" class="form-select">
+                                <option>option1</option>
+                                <option>option2</option>
+                                <option>option3</option>
+                                <option>option4</option>
+                            </select>                        </div>
+                        <div class="mb-3">
+                            <label for="TextInput" class="form-label">Description de probléme :</label>
+                            <textarea class="form-control p-1" name="message" rows="5" cols="30" placeholder="Descrption ...">
 
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around justify-content-lg-end d-md-none">
+                        <input class="col-3 col-lg-auto btn btn-primary" type="submit">
+                        <input class="col-3 col-lg-auto btn btn-info text-light" type="button" value="Sauvegarder">
+                        <input class=" col-3 col-lg-auto btn btn-danger" type="button" value="Annulé">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
 
     <!-- BOOTSTRAP JS & POPPER -->
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    
 </body>
 </html>
