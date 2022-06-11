@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/2860646ad5.js" crossorigin="anonymous"></script>
 </head>
 <body id="home">
-    <nav class="navbar navbar-light navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg ">
         <div class="container">
           <a class="navbar-brand" href="#">
               <img src="img/logo.png" alt="" srcset="" class="img-fluid">
@@ -21,59 +21,80 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="col-4 mx-auto d-lg-none d-block mb-4">
+            <div class=" px-auto d-lg-none d-block mb-4 ms-auto">
               <img class="" src="img/logo.png" alt="" srcset="" width="150px" height="75">
             </div>
-            <ul class="navbar-nav me-auto mb-4 mb-lg-0">
-                <li class="nav-item mx-2 mb-2 mb-lg-0">
-                    <a class="nav-link position-relative active fw-bold d-flex align-items-center" aria-current="page" href="#">
-                      <img class="me-3" src="img/house-solid.svg" alt="" srcset="" height="22px" width="22px">
+            <ul class="navbar-nav mx-auto mb-4 mb-lg-0">
+              <li class="nav-item mx-2 mb-2 mb-lg-0">
+                    <a class="nav-link position-relative active fw-semibold d-flex align-items-center" aria-current="page" href="#">
+                      <img class="me-3 me-lg-2" src="img/house-solid.svg" alt="" srcset="" height="18px" width="18px">
                       Dashboard
                       <span class="sp"></span>
                     </a>
-                </li>
-                
-              <li class="nav-item dropdown mx-2 mb-2 mb-lg-0 d-none-xl">
-                <a class="nav-link position-relative fw-bold" href="ticket.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="me-3" src="img/ticket-solid.svg" alt="" srcset="" height="22px" width="22px">
+              </li>
+              <li class="nav-item dropdown mx-2 mb-2 mb-lg-0">
+                <a class="nav-link position-relative fw-semibold  d-flex align-items-center" href="ticket.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="me-3 me-lg-2" src="img/ticket-solid.svg" alt="" srcset="" height="18px" width="18px">
                   Ticket
                   <span class="sp"></span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-ticket-simple"></i> Création ticket</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-ticket"></i> Consultation des tickets</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="me-3 me-lg-1" src="img/ticket-simple-solid.svg" alt="" srcset="" height="16px" width="16px">
+                      Création ticket
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="me-3 me-lg-1" src="img/clipboard-list-solid.svg" alt="" srcset="" height="16px" width="16px">
+                      Consultation des tickets
+                    </a>
+                  </li>
                 </ul>
-            </li>
-            <li class="nav-item dropdown mx-2 mb-2 mb-lg-0">
-                <a class="nav-link position-relative fw-bold" href="prestataire.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="me-3" src="img/user-gear-solid.svg" alt="" srcset="" height="22px" width="22px">                    Prestataire
-                    <span class="sp"></span>
+              </li>
+              <li class="nav-item dropdown mx-2 mb-2 mb-lg-0">
+                <a class="nav-link position-relative fw-semibold d-flex align-items-center" href="prestataire.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="me-3 me-lg-2" src="img/user-gear-solid.svg" alt="" srcset="" height="18px" width="18px">
+                  Prestataire
+                  <span class="sp"></span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-user-pen"></i> Ajouter Prestataire</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-users-gear"></i> Consulter les prestataire</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="me-3 me-lg-1" src="img/person-circle-plus-solid.svg" alt="" srcset="" height="16px" width="16px">
+                      Ajouter Prestataire
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="me-3 me-lg-1" src="img/people-line-solid.svg" alt="" srcset="" height="16px" width="16px">
+                      Consulter les prestataire
+                    </a>
+                  </li>
                 </ul>
-            </li>
-            <li class="nav-item dropdown mx-2 mb-2 mb-lg-0">
-                <a class="nav-link  position-relative fw-bold" href="utilisateurs.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="me-3" src="img/users-solid.svg" alt="" srcset="" height="22px" width="22px">                    Utilisateurs
+              </li>
+              <li class="nav-item dropdown mx-2 mb-2 mb-lg-0">
+                <a class="nav-link  position-relative fw-semibold d-flex align-items-center" href="utilisateurs.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="me-3 me-lg-2" src="img/user-group-solid.svg" alt="" srcset="" height="18px" width="18px">
+                  Utilisateurs
                     <span class="sp"></span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
                     <a class="dropdown-item" href="#">
-                        <i class="fa-light fa-user-plus"></i>
+                      <img class="me-3 me-lg-1" src="img/user-plus-solid.svg" alt="" srcset="" height="16px" width="16px">
                       Ajouter un utilisateur
                     </a>
                     </li>
                     <li>
                     <a class="dropdown-item" href="#">
-                        <i class="fa-light fa-users"></i>
+                      <img class="me-3 me-lg-1" src="img/users-solid.svg" alt="" srcset="" height="16px" width="16px">
                         Consulter les utilisateurs
                     </a>
                     </li>
                 </ul>
-            </li>
+              </li>
             </ul>
             <form class="d-flex mt-4 mt-lg-0 mb-5 mb-lg-0" role="search">
                 <div class="input-group">
@@ -83,14 +104,19 @@
                   </div>
             </form>
             <div class="mx-3 d-lg-block d-none">
-                <i class="fa-light fa-bell"></i>
+              <img class="me-3 me-lg-2" src="img/bell-solid.svg" alt="" srcset="" height="18px" width="18px">
             </div>
             <div class="dropdown d-lg-block d-none">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="img/logo.png" class="img rounded" alt="" srcset="" width="30px" height="30px">
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#"><i class="fa-light fa-person-walking"></i>Se déconnecter</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img class="me-3 me-lg-2" src="img/arrow-right-to-bracket-solid.svg" alt="" srcset="" height="18px" width="18px">
+                      Se déconnecter
+                    </a>
+                  </li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Mon Compte</a></li>
                 </ul>
