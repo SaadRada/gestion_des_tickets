@@ -85,6 +85,9 @@
 }
 #creationTicket{
   .container{
+    .btn{
+      border-radius: 2.5rem !important;
+    }
     #formCreationTicket{
       border: 1px solid $dark !important;
       border-radius: 10px !important;
